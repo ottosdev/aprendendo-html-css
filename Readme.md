@@ -2,14 +2,20 @@
 
 <img style='width: 100%; height: 400px' src='./portfolio/image3.png'/>
 
-# Sobre
-Uma parte do projetinho montando seu site com Html e Css.
+## About
 
+It is a website about you. Your portifolio
 
 # Login-Page
 
 <img style='width: 100%; height: 400px' src='./login-page/login.png'/>
 
-# Sobre
-Criando uma login page responsiva com scss
+## About
 
+Making a login page
+
+<img style='width: 100%; height: 400px' src='./exercice/exercice.png'/>
+
+# Exercice
+
+It`s a websibe about workout.

@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2/family=Inter:wght@300;600&display=swap");
+
+$blue: #0957de;
+$card: #dbddf3;
+$black: #202023;
+$black-hover: #20202390;
+$img: #8591fd;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px gray;
+    border-radius: 8px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $img;
+    border-radius: 8px;
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $img;
+  }
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 2rem 15rem;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  min-height: calc(100vh - 2rem * 2);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    padding-left: 30rem;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  li {
+    a {
+      font-size: 1.125rem;
+      color: $black;
+      font-weight: bold;
+
+      &:hover {
+        color: $black-hover;
+      }
+    }
+  }
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child {
+      color: $black;
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+    &:first-child:hover {
+      color: $black-hover;
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+
+    &:last-child {
+      color: white;
+      background: $blue;
+      font-size: 1.2rem;
+      width: 180px;
+      height: 50px;
+      padding: 0 1rem;
+      text-align: center;
+      border-radius: 2rem;
+      box-shadow: 0 10px 10px #00000030;
+      font-weight: bold;
+      transition: background .2s;
+    }
+    &:last-child:hover {
+      background: transparent;
+      border: 2px solid $blue;
+      color: black;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.principal {
+  margin-top: 10rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 1fr auto;
+  gap: 1rem;
+}
+
+.first-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+  h1 {
+    font-size: 4rem;
+    color: $black;
+    text-shadow: $black 2px 2px 2px;
+  }
+
+  button {
+    color: white;
+    background: $blue;
+    font-size: 1.2rem;
+    width: 250px;
+    height: 64px;
+    padding: 0 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, filter 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.second-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 100%;
+  }
+}
+
+.third-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .card {
+    background: #000000;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #dbddf3;
+    border: none;
+    div {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background-color: $img;
+    }
+    span {
+      color: $black;
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+  }
+}
+.services {
+  margin-top: 10rem;
+  width: 100%;
+  background-color: $card;
+  border-radius: 10px;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+  gap: 2rem;
+
+  .card-service {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: $img;
+
+    div:first-child {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: $card;
+    }
+
+    div:last-child {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: $card;
+      align-self: end;
+    }
+
+    h4 {
+      color: white;
+      font-size: 1.5rem;
+    }
+    p {
+      color: #eee;
+    }
+  }
+}
