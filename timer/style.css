@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+
+button {
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.start {
+    background-color: green;
+}
+
+.stop {
+    background-color: red;
+}
+
+.wait {
+    background-color: grey;
+}

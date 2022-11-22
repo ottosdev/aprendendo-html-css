@@ -19,3 +19,7 @@ Making a login page
 # Exercice
 
 It`s a websibe about workout.
+
+# Otp Validation
+
+<img style='width: 100%; height: 400px' src='./opt-verification/otp.png'/>
