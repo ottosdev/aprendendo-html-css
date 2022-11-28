@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-header">
+        <h2>Create Account</h2>
+      </div>
+
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" />
+          <i class="img-success"><img src="./success-icon.svg" alt="" srcset="" /></i>
+          <i class="img-error"><img src="./error-icon.svg" alt="" srcset="" /></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" />
+          <i class="img-success"><img src="./success-icon.svg" alt="" srcset="" /></i>
+          <i class="img-error"><img src="./error-icon.svg" alt="" srcset="" /></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+          <i class="img-success"><img src="./success-icon.svg" alt="" srcset="" /></i>
+          <i class="img-error"><img src="./error-icon.svg" alt="" srcset="" /></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="confirmPassword">Confirm Your Password</label>
+          <input type="password" id="confirmPassword" />
+          <i class="img-success"><img src="./success-icon.svg" alt="" srcset="" /></i>
+          <i class="img-error"><img src="./error-icon.svg" alt="" srcset="" /></i>
+          <small>Error message</small>
+        </div>
+        <button type="submit" id="send">SEND</button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

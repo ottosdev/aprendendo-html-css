@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  
+    #312E38  primary
+    #FF9000  secondary
+    #666360  placeholder
+    #DB5A5A  error
+    #4ECA64  success
+    #3E3B47  card
+
+*/
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    min-height: 100vh;
+    background: #312E38 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+
+.container {
+    width: 500px;
+    max-width: 100%;
+    background: #3E3B47;
+    border: 2px solid #232129;
+    border-radius: 8px;
+}
+
+.container-header {
+    padding: 30px 40px;
+}
+
+.container-header h2{
+    font-size: 2.25rem;
+    color: white;
+    font-weight: 600;
+}
+
+.form {
+    padding: 0 40px 30px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.form-control input {
+    outline: 0;
+    border: 2px solid #232129;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #3E3B47;
+}
+
+.form-control label {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 2px;
+}
+.form-control i {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+}
+
+.form-control.error small {
+    color: #DB5A5A;
+    visibility: visible;
+    font-size: 12px;
+}
+
+.form button {
+    width: 100%;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 20px;
+    background-color: #FF9000;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    font-weight: bold;
+    transition: filter .2s;
+}
+
+.form button:hover {
+    filter: brightness(.9);
+}
+
+.btn-success {
+    background: #4ECA64;
+}
+
+
