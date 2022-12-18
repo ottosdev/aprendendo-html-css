@@ -1,0 +1,169 @@
+$theme-color: #a63de6;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1.5rem;
+    &::after {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: $theme-color;
+        height: 100vh;
+        clip-path: polygon(50% 10%, 10% 50%, 90% 100% , 0 1%);
+        z-index: -1;
+        width: 60%;
+    }
+
+}
+
+.login-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 50px -30px black;
+    width: 1200px;
+    border-radius: 30px;
+    overflow: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+    a {
+        text-decoration: none;
+        color: $theme-color;
+    }
+    .column {
+        padding: 4rem;
+        &:last-child {
+            background: url('main.jpeg');
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+    
+            &:after{
+                content: '';
+                position: absolute;
+                background: linear-gradient(90deg, white, #ffffff82);
+                inset: 0;
+            }
+            * {
+                z-index: 1;
+    
+            }
+            a {
+                display: inline-block;
+                padding: 12px 30px;
+                font-size: 16px;
+                border: 2px solid $theme-color;
+                color: black;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all .3s;
+                font-weight: 600;
+    
+                &:hover {
+                    background-color: $theme-color;
+                    color: white;
+                }
+            }
+        }
+        &:last-child {
+            text-align: center;
+        }
+    }
+    h1 {
+        margin-bottom: 15px ;
+    }
+    .form-element {
+        width: 100%;
+        border: none;
+        background-color: #f1f1f1;
+        padding: 20px 30px;
+        font-size: 18px;
+        border-radius: 50px;
+        transition: box-shadow .2s;
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px $theme-color;
+        }
+    }
+    input[type=checkbox] {
+        accent-color: $theme-color;
+        width: 16px;
+        height: 16px;
+    }
+    form {
+        margin-top: 3rem;
+        &>* {
+            margin-top: 1rem;
+        }
+        button {
+            background-color: $theme-color;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all .2s; 
+            &:active {
+                scale: .95;
+                background: darken($theme-color, 10%) ;
+            }
+        }
+        .form-chackbox-item {
+            display: flex;
+            align-items: center;
+            gap: .7rem;
+            margin-left: 5px;
+        }
+    }
+}
+
+.flex {
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 22px;
+        color: white;
+        transition: scale .2s;
+        &.facebook {
+            background-color: #3b5998;
+        }
+        &.twitter {
+            background-color: #55acee;
+        }
+        &.github {
+            background-color: #111;
+        }
+        &:hover {
+            scale: .95;
+        }
+    }
+    
+}
