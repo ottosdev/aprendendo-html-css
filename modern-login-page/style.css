@@ -19,8 +19,8 @@ body::after {
   inset: 0;
   background: #a63de6;
   height: 100vh;
-  -webkit-clip-path: polygon(50% 10%, 10% 50%, 90% 100%, 0 1%);
-          clip-path: polygon(50% 10%, 10% 50%, 90% 100%, 0 1%);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 0, 70% 100%);
+          clip-path: polygon(100% 0, 0 0, 0 0, 70% 100%);
   z-index: -1;
   width: 60%;
 }
